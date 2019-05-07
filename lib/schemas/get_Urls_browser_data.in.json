@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+        "url": {
+            "required": true,
+            "type": "string"
+        },
+        "item_format": {
+            "type": "string",
+            "enum": [
+                "normal",
+                "flat"
+            ],
+            "default": "normal"
+        },
+        "simplify_special_types": {
+            "type": "boolean",
+            "default": false
+        },
+        "include_raw_html": {
+            "type": "boolean",
+            "default": false
+        },
+        "screenshot": {
+            "type": "string",
+            "enum": [
+                "none",
+                "normal",
+                "full"
+            ],
+            "default": "none"
+        },
+        "screenshot_width": {
+            "type": "integer",
+            "minimum": 50,
+            "maximum": 1280,
+            "default": 640
+        },
+        "screenshot_file_format": {
+            "type": "string",
+            "enum": [
+                "png",
+                "jpg"
+            ],
+            "default": "png"
+        }
+    }
+}

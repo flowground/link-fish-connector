@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "url": {
+            "required": true,
+            "type": "string"
+        },
+        "item_format": {
+            "type": "string",
+            "enum": [
+                "normal",
+                "flat"
+            ],
+            "default": "normal"
+        },
+        "simplify_special_types": {
+            "type": "boolean",
+            "default": false
+        },
+        "include_raw_html": {
+            "type": "boolean",
+            "default": false
+        },
+        "browser_render": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

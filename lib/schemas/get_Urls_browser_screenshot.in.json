@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "url": {
+            "required": true,
+            "type": "string"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "normal",
+                "full"
+            ],
+            "default": "normal"
+        },
+        "file_format": {
+            "type": "string",
+            "enum": [
+                "png",
+                "jpg"
+            ],
+            "default": "png"
+        },
+        "width": {
+            "type": "integer",
+            "minimum": 50,
+            "maximum": 1280,
+            "default": 640
+        }
+    }
+}

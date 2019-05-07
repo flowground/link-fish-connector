@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "url": {
+            "required": true,
+            "type": "string"
+        },
+        "selector": {
+            "required": false,
+            "type": "string"
+        },
+        "browser_render": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}
